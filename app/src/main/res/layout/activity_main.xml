@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/putihmangkak">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="342dp"
+        android:layout_height="297dp"
+        android:background="@drawable/fg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674">
+
+
+        <Button
+            android:id="@+id/btncara"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/btnrawat"
+            android:fontFamily="@font/michegar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toEndOf="@+id/btnjenis"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnalat"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/btnalat"
+            android:fontFamily="@font/michegar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.771"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnteknik"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/btnteknik"
+            android:fontFamily="@font/michegar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnjenis"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/btnjenis"
+            android:fontFamily="@font/michegar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnkamera"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/iconkamera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/michegar"
+        android:text="Roy Achmad Aziz"
+        android:textColor="@color/putihtulang"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="176dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nama"
+        app:srcCompat="@drawable/logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

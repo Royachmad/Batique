@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdFragment"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/putihtulang">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/medel"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medel"
+        android:textColor="@color/coklattua"
+        android:fontFamily="@font/michegar"
+        android:textSize="30sp"
+        android:gravity="center">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medel adalah proses pewarnaan pertama pada batik klasik yaitu pencelupan warna biru tua menggunakan ektrak batang dan daun tanaman indigo (indigofera tinctora) untuk warna dalam dan untuk warna sintesis menggunakan  naphol AS-BO."
+        android:textColor="@color/coklattua"
+        android:fontFamily="@font/keep"
+        android:textSize="15sp"
+        android:gravity="center">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/slideThreeBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="   Back   "
+            android:textSize="20sp"
+            android:layout_gravity="bottom|start"
+            android:textColor="@color/coklattua"
+            android:fontFamily="@font/keep"
+            android:clickable="true"
+            android:focusable="true"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/NextThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="   Next   "
+            android:textSize="20sp"
+            android:layout_gravity="bottom|end"
+            android:gravity="bottom|end"
+            android:textColor="@color/coklattua"
+            android:fontFamily="@font/keep"
+            android:clickable="true"
+            android:focusable="true"
+            >
+
+
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

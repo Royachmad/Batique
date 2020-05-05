@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putihtulang"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Teknik_batik">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teknik Batik"
+        android:fontFamily="@font/michegar"
+        android:textSize="30dp"
+        android:textColor="@color/coklattua"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center">
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp">
+
+                    <Button
+                        android:id="@+id/klowong"
+                        android:layout_width="167dp"
+                        android:layout_height="122dp"
+                        android:background="@drawable/klowong"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.082"></Button>
+
+                    <TextView
+                        android:layout_width="84dp"
+                        android:layout_height="28dp"
+                        android:fontFamily="@font/michegar"
+                        android:text="Klowong"
+                        android:textColor="@color/coklattua"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.535">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="353dp"
+                        android:layout_height="95dp"
+                        android:fontFamily="@font/keep"
+                        android:text="      Klowong atau nglowong adalah proses melekatkan
+                        \n  malam/lilin batik pertama kali pada kain yang akan
+                        \n  dibatik dengan cara menorehkan lilin pada kain yang
+                        \n  akan dibatik dengan cara menggunakan canting (batik
+                        \n  tulis) atau melekatkan lilin dengan pola cap tembaga
+                        \n  menggunakan cap (batik cap)."
+                        android:textAlignment="gravity"
+                        android:textColor="@color/coklattua"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.913">
+
+                    </TextView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp">
+
+                    <Button
+                        android:id="@+id/nyoga"
+                        android:layout_width="167dp"
+                        android:layout_height="122dp"
+                        android:background="@drawable/nyoga"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"></Button>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="31dp"
+                        android:fontFamily="@font/michegar"
+                        android:text="Nyoga"
+                        android:textColor="@color/coklattua"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.501">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="364dp"
+                        android:layout_height="94dp"
+                        android:fontFamily="@font/keep"
+                        android:text="      Nyoga adalah proses pewarnaan ke-2 pada teknik
+                        \n  batik klasik menggunakan warna coklat yang diperoleh
+                        \n  dari pohon soga (peltophorum pterocarpum) untuk
+                        \n  netphol menggunakan resep AS- LB + garam orange
+                        \n  GG = coklat kemerahan, AS – LB + garam kuning GG =
+                        \n  Coklat kekuningan."
+                        android:textAlignment="gravity"
+                        android:textColor="@color/coklattua"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.489"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.86">
+
+                    </TextView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                    <Button
+                        android:id="@+id/medel"
+                        android:layout_width="167dp"
+                        android:layout_height="122dp"
+                        android:background="@drawable/medel"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"></Button>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="28dp"
+                        android:fontFamily="@font/michegar"
+                        android:text="Medel"
+                        android:textColor="@color/coklattua"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.554">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="363dp"
+                        android:layout_height="80dp"
+                        android:fontFamily="@font/keep"
+                        android:text="      Medel adalah proses pewarnaan pertama pada batik
+                        \n  klasik yaitu pencelupan warna biru tua menggunakan
+                        \n  ektrak batang dan daun tanaman indigo (indigofera
+                        \n  tinctora) untuk warna dalam dan untuk warna sintesis
+                        \n  menggunakan  naphol AS-BO."
+                        android:textAlignment="gravity"
+                        android:textColor="@color/coklattua"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.905">
+
+                    </TextView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp">
+
+                    <Button
+                        android:id="@+id/mbironi"
+                        android:layout_width="167dp"
+                        android:layout_height="122dp"
+                        android:background="@drawable/mbironi"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.031"></Button>
+
+                    <TextView
+                        android:layout_width="84dp"
+                        android:layout_height="28dp"
+                        android:fontFamily="@font/michegar"
+                        android:text="Mbironi"
+                        android:textColor="@color/coklattua"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.594">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="362dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/keep"
+                        android:text="      Mbironi adalah prose menutup bagian tertentu pada
+                        \n  warna biru atau bagian yang telah dikeroki dengan lilin
+                        \n  batik"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/coklattua"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.489"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.81">
+
+                    </TextView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp">
+
+                    <Button
+                        android:id="@+id/ngerok"
+                        android:layout_width="171dp"
+                        android:layout_height="119dp"
+                        android:background="@drawable/ngerok"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"></Button>
+
+                    <TextView
+                        android:layout_width="83dp"
+                        android:layout_height="37dp"
+                        android:fontFamily="@font/michegar"
+                        android:text="Ngerok"
+                        android:textColor="@color/coklattua"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.538">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="362dp"
+                        android:layout_height="69dp"
+                        android:fontFamily="@font/keep"
+                        android:text="      Ngerok adalah proses menghilangkan lilin pada
+                        \n  beberapa bagian kain batik yang ingin diwarnai dengan
+                        \n  menggunakan alat yang namanya “cawuk” (plat tipis/
+                        \n  seng yang dibengkokkan menyerupai huruf U)."
+                        android:textAlignment="gravity"
+                        android:textColor="@color/coklattua"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.489"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.827">
+
+                    </TextView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp">
+
+                    <Button
+                        android:id="@+id/nembok"
+                        android:layout_width="167dp"
+                        android:layout_height="122dp"
+                        android:background="@drawable/nembok"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"></Button>
+
+                    <TextView
+                        android:layout_width="95dp"
+                        android:layout_height="26dp"
+                        android:fontFamily="@font/michegar"
+                        android:text="Nembok"
+                        android:textColor="@color/coklattua"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.584">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="371dp"
+                        android:layout_height="49dp"
+                        android:fontFamily="@font/keep"
+                        android:text="      Nembok adalah proses menutup bagian pola tertentu
+                        \n  dengan malam untuk melindungi warna sebelumnya dari
+                        \n  pewarnaan selanjutnya."
+                        android:textAlignment="gravity"
+                        android:textColor="@color/coklattua"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.828">
+
+                    </TextView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp">
+
+                    <Button
+                        android:id="@+id/nglorod"
+                        android:layout_width="167dp"
+                        android:layout_height="122dp"
+                        android:background="@drawable/nglorod"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.089"></Button>
+
+                    <TextView
+                        android:layout_width="87dp"
+                        android:layout_height="28dp"
+                        android:fontFamily="@font/michegar"
+                        android:text="Ngelorod"
+                        android:textColor="@color/coklattua"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.627">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="367dp"
+                        android:layout_height="49dp"
+                        android:fontFamily="@font/keep"
+                        android:text="      Nglorod / ngebyok adalah proses terakhir dalam
+                        \n  pembuatan batik yaitu proses merebus kain batik untuk
+                        \n  menghilangkan lilin yang menempel pada kain."
+                        android:textAlignment="gravity"
+                        android:textColor="@color/coklattua"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.916">
+
+                    </TextView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnback"
+        android:background="@drawable/back"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+    </Button>
+
+</LinearLayout>
