@@ -2,6 +2,7 @@ package com.example.batique;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -13,10 +14,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.batique.classify.Classifier;
+import com.example.batique.classify.TensorFlowImageClassifier;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -35,13 +40,35 @@ Button jenisbatik, Carabatik, Teknikbatik, Alatbatik, AmbilGambar;
     int max_resolution_image = 800;
     private Bitmap decoded;
 
+    TextView hasilKlas;
+    Classifier classifier;
+    private String TAG = "MainActivity";
+    private int INPUT_WIDTH = 300;
+    private int INPUT_HEIGHT = 300;
+    private int IMAGE_MEAN = 128;
+    private float IMAGE_STD = 128f;
+    private String INPUT_NAME = "Mul";
+    private String OUTPUT_NAME = "final_result";
+    private String MODEL_FILE = "file:///android_asset/hero_stripped_graph.pb";
+    private String LABEL_FILE = "file:///android_asset/hero_labels.txt";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        gambarBatik = findViewById(R.id.imageView);
+        AssetManager assets = this.getAssets();
+        try {
+            classifier = TensorFlowImageClassifier.create(
+                    assets, MODEL_FILE, LABEL_FILE, INPUT_WIDTH, INPUT_HEIGHT,
+                    IMAGE_MEAN, IMAGE_STD, INPUT_NAME, OUTPUT_NAME);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
+        gambarBatik = findViewById(R.id.imageView);
+        hasilKlas = findViewById(R.id.hasilKlasifikasi);
         jenisbatik = findViewById(R.id.btnjenis);
         jenisbatik.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -134,9 +161,11 @@ Button jenisbatik, Carabatik, Teknikbatik, Alatbatik, AmbilGambar;
                 Bundle extras = data.getExtras();
                 final Bitmap imageBitmap = (Bitmap) extras.get("data");
                 imageBatik = imageBitmap;
-                imageBatik = getGrayscale(imageBatik);
+                //imageBatik = getGrayscale(imageBatik);
                 gambarBatik.setImageBitmap(imageBatik);
-                   sendImage();
+
+
+                 sendImage();
 //
             }
         } else if (flag == 2) {
@@ -181,7 +210,7 @@ Button jenisbatik, Carabatik, Teknikbatik, Alatbatik, AmbilGambar;
 
         //menampilkan gambar yang dipilih dari camera/gallery ke ImageView
         imageBatik = decoded;
-        imageBatik = getGrayscale(imageBatik);
+       // imageBatik = getGrayscale(imageBatik);
         gambarBatik.setImageBitmap(imageBatik);
         sendImage();
 //
@@ -211,10 +240,8 @@ Button jenisbatik, Carabatik, Teknikbatik, Alatbatik, AmbilGambar;
         return Bitmap.createScaledBitmap(dest, 105, 105, false);
     }
 
-    public String sendImage(){ // tempat ngirim ke server
-        String hasilKlasifikasi=""; // variabel untuk menangkap hasil perhitungan di server
-        imageBatik = imageBatik; // variabel yang dikirimkan ke server
-
-        return "Gambar batik tersebut tergolong batik: "+hasilKlasifikasi;
+    public void sendImage(){ // tempat ngirim ke server
+        String hasilKlasifikasi=classifier.recognizeImage(imageBatik).toString();
+        hasilKlas.setText(hasilKlasifikasi);
     }
 }
